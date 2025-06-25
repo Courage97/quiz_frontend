@@ -1,36 +1,7 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+The Interview Quiz Platform (Frontend) is a modern, interactive web application that enables hosts to conduct real-time quiz sessions with multiple participants. Built using Next.js, it offers a seamless and responsive experience for both hosts and quiz participants. Hosts can create quizzes, launch live sessions, and push questions to connected players. Participants join using a session code and receive each question instantly through a WebSocket connection, allowing them to answer within a timed window.
 
-## Getting Started
+The platform emphasizes simplicity and engagement. Participants get instant feedback on their answers, and once the session ends, they’re shown a personal result page along with a leaderboard of top scorers. Meanwhile, hosts are redirected to a session summary page where they can view participant scores and read feedback submitted anonymously. The design prioritizes accessibility for all users, making it ideal for virtual classrooms, team-building activities, or candidate assessments.
 
-First, run the development server:
+Security and control are also well considered—hosts must log in using a secure token-based system (JWT), ensuring only authorized users can manage quizzes and view results. The frontend communicates efficiently with the backend APIs to manage state and data, and uses real-time WebSocket channels to keep all participants in sync without page reloads.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is not only technically robust but also user-friendly and highly engaging, making it an excellent addition to your portfolio and a valuable tool for live quiz hosting in various contexts.
